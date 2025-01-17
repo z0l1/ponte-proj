@@ -1,0 +1,25 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Hello World",
+      "description": "This is a hello world project used to discuss the folder structure, coding style, and other development decisions like libraries used",
+      "developers": [
+        { "name": "Odon Bodon", "role": "lead" },
+        { "name": "Hat Izsak", "role": "frontend" },
+        { "name": "Bob der Baumaister", "role": "backend" }
+      ]
+    },
+
+    {
+      "id": 2,
+      "name": "Money Maker",
+      "description": "A very serious project which is our bread and butter.",
+      "developers": [
+        { "name": "Seri Ous", "role": "lead" },
+        { "name": "Teszt Elek", "role": "frontend" },
+        { "name": "Bekk End", "role": "backend" }
+      ]
+    }
+  ]
+}
