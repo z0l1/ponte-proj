@@ -7,24 +7,24 @@ For styling I'll be using tailwind.
 
 ### Pages I'll need
 
-- Projects List
-- Projects Create
-- Project View (opt)
+-   Projects List
+-   Projects Create
+-   Project View (opt)
 
 so
 
-- /
-  - /projects
-    - / (List)
-    - /new (Create)
-    - /:id (View)
+-   /
+    -   /projects
+        -   / (List)
+        -   /new (Create)
+        -   /:id (View)
 
 ### Components I initially think I'll need
 
-- ProjectListCard (Pure)
-  - name
-  - desc
-  - imageSrc
+-   ProjectListCard (Pure)
+    -   name
+    -   desc
+    -   imageSrc
 
 Not sure about the Wizard.
 Don't want to overengineer it by creating a custom reusable comopnent.
@@ -39,18 +39,18 @@ I was thinking about using react-router. A router outlet paired with a react con
 For this project I'll be using a simpler structure:
 (for this size I could simply have folders for each file type but this feels a little more professional)
 
-- pages
-  - Projects
-    - types
-    - components
-    - hooks
-    - pages
-      - ...
-- shared
-  - types
-  - components
-  - hooks
-    (each with its own index.ts)
+-   pages
+    -   Projects
+        -   types
+        -   components
+        -   hooks
+        -   pages
+            -   ...
+-   shared
+    -   types
+    -   components
+    -   hooks
+        (each with its own index.ts)
 
 For bigger projects I like to use this "bulletproof-react" structure:
 https://github.com/alan2207/bulletproof-react/blob/master/docs/project-structure.md
@@ -75,3 +75,18 @@ The only concern is the license. "Use Limitation: 2 users". I guess technically 
 
 If I'll have time, I can potentially improve on the CreateProjectPage colleague adder section.
 Could be a cool addition like saving each colleague as well and then requesting them for autocompletion?
+
+### Explanations
+
+#### Setup Stuff commit
+
+contains a bunch of setup environment setup like
+
+-   Absolute imports
+-   Tailwind setup (fix)
+-   Prettier config
+-   Tanstack useQuery setup
+
+#### Mantine
+
+I have removed mantine and have decided to use "raw" tailwind. Since mantine migrated to postcss (have not used this version) they seem to work funny together with tailwind. I have looked at other libraries but decided it will be way faster to just give the components a little styling by myself even if it looks more basic.
