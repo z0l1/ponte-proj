@@ -90,3 +90,13 @@ contains a bunch of setup environment setup like
 #### Mantine
 
 I have removed mantine and have decided to use "raw" tailwind. Since mantine migrated to postcss (have not used this version) they seem to work funny together with tailwind. I have looked at other libraries but decided it will be way faster to just give the components a little styling by myself even if it looks more basic.
+
+### Destructure
+
+I am aware of destructuring in js like
+
+```javascript
+const MyComponent = ({ project, ...props }) => {};
+```
+
+but I got used to the practice of just using props argument and destructuring only when it is really necessary and would improve readability much more since it is more efficient to just access the already existing object properties than to just create a new one
