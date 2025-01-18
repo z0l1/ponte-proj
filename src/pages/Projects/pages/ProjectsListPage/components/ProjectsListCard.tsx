@@ -35,9 +35,9 @@ export const ProjectsListCard = (props: ProjectsListCardProps) => {
 
 				<Link
 					to={`/projects/${props.project.id}`}
-					className="bg-blue-300 cursor-pointer rounded-md py-1 text-center"
+					className="bg-teal-300 cursor-pointer rounded-md py-1 text-center"
 				>
-					View Project
+					Megtekintés
 				</Link>
 			</div>
 		</div>
