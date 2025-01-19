@@ -1,13 +1,13 @@
 export type Project = {
-	id: number;
+	id: string;
 	name: string;
 	description: string;
 	imageUrl: string;
 	links: string[];
-	developers: Developers[];
+	developers: Developer[];
 };
 
-export type Developers = {
+export type Developer = {
 	name: string;
 	role: string;
 };
