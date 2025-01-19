@@ -100,3 +100,7 @@ const MyComponent = ({ project, ...props }) => {};
 ```
 
 but I got used to the practice of just using props argument and destructuring only when it is really necessary and would improve readability much more since it is more efficient to just access the already existing object properties than to just create a new one
+
+### Commit method
+
+To be completely frank, I like to quickly throw together a solution and then make it nicer and nicer (extracting things into components, moving things to separate files etc). So I did the Create page in a big chunk and committed all in a single commit since I think in a code review it would not really matter how many commits I need to click through.
