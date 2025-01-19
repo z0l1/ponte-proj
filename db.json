@@ -1,30 +1,75 @@
 {
 	"projects": [
 		{
-			"id": 1,
+			"id": "asd",
 			"name": "Hello World",
 			"description": "This is a hello world project used to discuss the folder structure, coding style, and other development decisions like libraries used",
 			"links": ["https://google.com", "https://daily.dev"],
 			"imageUrl": "https://via.assets.so/img.jpg?t=HW&w=300&h=150&tc=black&bg=lightblue",
-
 			"developers": [
-				{ "name": "Odon Bodon", "role": "lead" },
-				{ "name": "Hat Izsak", "role": "frontend" },
-				{ "name": "Bob der Baumaister", "role": "backend" }
+				{
+					"name": "Odon Bodon",
+					"role": "lead"
+				},
+				{
+					"name": "Hat Izsak",
+					"role": "frontend"
+				},
+				{
+					"name": "Bob der Baumaister",
+					"role": "backend"
+				}
 			]
 		},
-
 		{
-			"id": 2,
+			"id": "das",
 			"name": "Money Maker",
 			"description": "A very serious project which is our bread and butter.",
 			"links": ["https://google.com", "https://daily.dev"],
 			"imageUrl": "https://via.assets.so/img.jpg?t=MM&w=300&h=150&tc=black&bg=lightblue",
 			"developers": [
-				{ "name": "Seri Ous", "role": "lead" },
-				{ "name": "Teszt Elek", "role": "frontend" },
-				{ "name": "Bekk End", "role": "backend" }
+				{
+					"name": "Seri Ous",
+					"role": "lead"
+				},
+				{
+					"name": "Teszt Elek",
+					"role": "frontend"
+				},
+				{
+					"name": "Bekk End",
+					"role": "backend"
+				}
 			]
+		},
+		{
+			"id": "1b92",
+			"name": "Alma Cica",
+			"description": "almas cicas almazos cicazos almacica. legcicabb legalmabb",
+			"imageUrl": "https://via.assets.so/img.jpg?t=AC&w=300&h=150&tc=black&bg=lightblue",
+			"developers": [],
+			"links": []
+		},
+		{
+			"id": "a6d1",
+			"name": "asdf",
+			"description": "",
+			"imageUrl": "https://via.assets.so/img.jpg?t=a&w=300&h=150&tc=black&bg=lightblue",
+			"developers": [],
+			"links": []
+		},
+		{
+			"id": "bd97",
+			"name": "Kalendarium",
+			"description": "",
+			"imageUrl": "https://via.assets.so/img.jpg?t=k&w=300&h=150&tc=black&bg=lightblue",
+			"developers": [
+				{
+					"name": "jani",
+					"role": "dev"
+				}
+			],
+			"links": ["hasznos link"]
 		}
 	]
 }
