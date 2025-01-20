@@ -7,6 +7,10 @@ input[type="text"] {
 	padding: 0.5rem 1rem;
 }
 
+a:hover {
+	text-decoration: underline;
+}
+
 button {
 	cursor: pointer;
 }
