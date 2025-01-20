@@ -1,50 +1,48 @@
-# React + TypeScript + Vite
+# Ponte Frontend Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Steps to run
 
-Currently, two official plugins are available:
+prerequisites:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   have Node.JS installed on the machine.
+-   make sure ports 5173 and 3000 are not in use
+-   please check out the devnotes where I share a few (maybe dumb) concerns about the quick BE I use [devnotes link to section](https://github.com/z0l1/ponte-proj/blob/main/DEVNOTES.md#fake-backend) (SPOILER: licensing)
 
-## Expanding the ESLint configuration
+#### 1. clone the repository
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```
+git clone https://github.com/z0l1/ponte-proj
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+#### 2. step into the folder (by default it should be ponte-proj)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
 ```
+cd ponte-proj
+```
+
+#### 3. install npm packages
+
+```
+npm i
+```
+
+#### 4. run the project using the dev script
+
+```
+npm run fulldev
+```
+
+this starts both FE and BE
+
+#### 5. open http://localhost:5173
+
+### Devnotes
+
+I have also created a DEVNOTES.md to document some of my thought process.
+
+### Time
+
+(rounding up) I have spent about 6 hours working on the project. of which
+
+-   about 1 hour was setting everything up (packages, BE)
+-   about 5 was the development time.
