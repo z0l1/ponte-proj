@@ -4,7 +4,7 @@ export type FetchErrorViewProps = {
 	onRetry?: () => void;
 };
 export const FetchErrorView = (props: FetchErrorViewProps) => {
-	const title = props.title ?? "Could not fetch data";
+	const title = props.title ?? "Hiba a lekérés közben";
 	return (
 		<div className="max-h-max flex flex-col justify-items-start items-start border-2 border-red-500 rounded-md p-2 gap-2">
 			<h3 className="text-lg font-semibold">{title}</h3>

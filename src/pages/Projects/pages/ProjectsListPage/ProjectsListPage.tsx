@@ -13,7 +13,7 @@ export const ProjectsListPage = () => {
 		retry: false,
 	});
 
-	if (query.isLoading) {
+	if (query.isLoading || query.isRefetching) {
 		return (
 			<PageLayout>
 				<SkeletonLoaders />
@@ -25,7 +25,7 @@ export const ProjectsListPage = () => {
 		return (
 			<PageLayout>
 				<FetchErrorView
-					title="Could not fetch data"
+					title="Hiba a betöltés közben"
 					// title={query.error.name}
 					// description={query.error.message}
 					onRetry={query.refetch}
@@ -34,12 +34,22 @@ export const ProjectsListPage = () => {
 		);
 	}
 
+	if (!query.data) {
+		return (
+			<PageLayout>
+				<FetchErrorView
+					title="Ismeretlen hiba a betöltés közben"
+					onRetry={query.refetch}
+				></FetchErrorView>
+			</PageLayout>
+		);
+	}
+
 	return (
 		<PageLayout>
-			{query.data &&
-				query.data.map((proj) => (
-					<ProjectsListCard key={proj.id} project={proj} />
-				))}
+			{query.data.map((proj) => (
+				<ProjectsListCard key={proj.id} project={proj} />
+			))}
 		</PageLayout>
 	);
 };
