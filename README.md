@@ -46,3 +46,10 @@ I have also created a DEVNOTES.md to document some of my thought process.
 
 -   about 1 hour was setting everything up (packages, BE)
 -   about 5 was the development time.
+
+### Tasks
+
+-   [x] Project list page
+-   [x] Project create page with "wizard"
+-   [x] Project view page
+-   [ ] filtering on list page
